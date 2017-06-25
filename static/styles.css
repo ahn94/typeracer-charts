@@ -1,0 +1,11 @@
+html {
+    padding-bottom: 30px;
+}
+
+form {
+    text-align: center;
+}
+
+.gone {
+    display: none !important;
+}

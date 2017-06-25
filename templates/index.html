@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    TypeRacer History
+{% endblock %}
+
+{% block header %}
+    TypeRacer Charts
+{% endblock %}
+
+{% block main %}
+<div id="container" class="gone" style="width:100%; height:800px;"></div>
+<div id="container2" class="gone" style="width:100%; height:800px;"></div>
+<form class="form-inline">
+    <div class="form-group center-text">
+      <label for="files">Upload a CSV formatted file:</label>
+      <input type="file" id="files"  class="form-control" accept=".csv" required />
+    </div>
+    <div class="form-group">
+         <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+     </div>
+</form>
+
+<!--<input type="file" id="input"  accept=".csv" onchange="parseCSV(this.files)">-->
+{% endblock %}
