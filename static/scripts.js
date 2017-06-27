@@ -48,10 +48,12 @@ function parseCSV(file) {
 
 function toChart(json, file) {
     
-    var wpm = new Array();
+    var wpm = [];
+    var acc = [];
     
     for (var i = 1; i < json.data.length; i++) {
         wpm.push([parseInt(json.data[i][1], 10)]);
+        acc.push([parseFloat(json.data[i][2]), parseInt(json.data[i][1], 10)]);
     }
 
     $('#container').removeClass('gone');
@@ -93,16 +95,8 @@ function toChart(json, file) {
             marker: {
                 radius: 6
             }
-        }],
+        }]
     });
-    
-    var acc = new Array();
-    
-    for (var i = 1; i < json.data.length; i++) {
-        acc.push([parseFloat(json.data[i][2]), parseInt(json.data[i][1], 10)]);
-    }
-    
-    console.log(acc);
     
     $('#container2').removeClass('gone');
     chartWPM = Highcharts.chart('container2', {
@@ -142,7 +136,7 @@ function toChart(json, file) {
             marker: {
                 radius: 6
             }
-        }],
+        }]
     });
     
     
