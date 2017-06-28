@@ -2,8 +2,9 @@ html {
     padding-bottom: 30px;
 }
 
-form {
+form, p {
     text-align: center;
+    margin: 15px;
 }
 
 .gone {
