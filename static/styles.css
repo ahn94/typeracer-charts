@@ -74,6 +74,7 @@ a {
     line-height: 40px;
     text-align: center;
     white-space: nowrap;
+    min-width: 800px;
 }
 
 .content {

@@ -34,13 +34,13 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" /> {{ JSGlue.include() }}
-
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" /> 
+    
+    {{ JSGlue.include() }}
 
     <!-- app's own JavaScript -->
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
-
-
+    
     <title>{% block title %}{% endblock %}</title>
 
 </head>
