@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
 
-
-{% block title %}
-    TypeRacer History
-{% endblock %}
+{% block title %} 
+    TypeRacer History 
+{% endblock %} 
 
 {% block main %}
-    <h4><b>Instructions:</b> Download your 'race_data.csv' file from <a href="http://data.typeracer.com/pit/race_history">TypeRacer History</a> or <a
-            id="sample">Click Here</a> to see my data.</h4>
+<div class="text-center">
+    <h4><b>Instructions:</b> Download your 'race_data.csv' file from <a href="http://data.typeracer.com/pit/race_history">TypeRacer History</a>        or <a id="sample">Click Here</a> to see my data.</h4>
     <form class="form-inline">
         <div class="form-group center-text">
             <label class="h5" for="files"><strong>Upload your race_data.csv:</strong></label>
@@ -19,6 +18,5 @@
     </form>
     <div id="container" class="gone" style="width:100%; height:800px;"></div>
     <div id="container2" class="gone" style="width:100%; height:800px;"></div>
-
-    <!--<input type="file" id="input"  accept=".csv" onchange="parseCSV(this.files)">-->
+</div>
 {% endblock %}
