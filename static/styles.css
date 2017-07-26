@@ -1,10 +1,86 @@
-html {
-    padding-bottom: 30px;
+html,
+body,
+div,
+form,
+fieldset,
+h1,
+h5,
+legend {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+html,
+body,
+.page-wrapper {
+    min-height: 98vh;
 }
 
-form, p {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #007ec5 url(bg.cache.png) repeat-x scroll 0 0;
+    color: #466;
+    font: normal 100% "Lucida Sans Unicode", sans-serif;
+}
+
+.themeHeader {
+    height: 92px;
+    min-width: 800px;
+}
+
+.title {
+    padding: 28px 20px 0 76px;
+    width: 125px;
+    vertical-align: top;
+}
+
+.title h1 {
+    color: #FFF;
+    font: normal 22px Verdana, sans-serif;
+}
+
+a {
+    color: #E56B00;
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    background: url(topleft.cache.png) no-repeat 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    background: #FFF url(bgmain.cache.png) no-repeat;
+    clear: both;
+    padding: 12px 12px 0 52px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 800px;
+}
+
+.footer {
+    background: #007ec5 url(bg.cache.png) repeat-x 0 -92px;
+    color: #819EA0;
+    font-size: 90%;
+    line-height: 40px;
     text-align: center;
-    margin: 15px;
+    white-space: nowrap;
+}
+
+.content {
+    min-height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 20px;
 }
 
 .gone {

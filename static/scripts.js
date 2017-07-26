@@ -120,7 +120,7 @@ function toChart(json, file) {
         },
         series: [{
             name: 'WPM',
-            color: 'rgba(119, 152, 191, .3)',
+            color: 'rgba(229,107,0, .2)',
             data: wpm,
             marker: {
                 radius: 6
@@ -169,7 +169,7 @@ function toChart(json, file) {
         },
         series: [{
             name: 'WPM',
-            color: 'rgba(119, 152, 191, .3)',
+            color: 'rgba(229,107,0, .2)',
             data: acc,
             marker: {
                 radius: 6
