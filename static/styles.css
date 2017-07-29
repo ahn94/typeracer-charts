@@ -23,7 +23,7 @@ body,
 }
 
 body {
-    background: #007ec5 url(bg.cache.png) repeat-x scroll 0 0;
+    background: #c43800 url(bg.cache.red.png) repeat-x scroll 0 0;
     color: #466;
     font: normal 100% "Lucida Sans Unicode", sans-serif;
 }
@@ -50,13 +50,13 @@ a {
 }
 
 .page-wrapper {
-    background: url(topleft.cache.png) no-repeat 0 0;
+    background: url(topleft.cache.red.transparent.png) no-repeat 0 0;
     display: flex;
     flex-direction: column;
 }
 
 .content-wrapper {
-    background: #FFF url(bgmain.cache.png) no-repeat;
+    background: #FFF url(bgmain.cache.red.png) no-repeat;
     clear: both;
     padding: 12px 12px 0 52px;
     flex-grow: 1;
@@ -66,9 +66,9 @@ a {
     flex-direction: column;
     min-width: 800px;
 }
-
+/* #007ec5 */
 .footer {
-    background: #007ec5 url(bg.cache.png) repeat-x 0 -92px;
+    background: #c43800 url(bg.cache.red.png) repeat-x 0 -92px;
     color: #819EA0;
     font-size: 90%;
     line-height: 40px;
